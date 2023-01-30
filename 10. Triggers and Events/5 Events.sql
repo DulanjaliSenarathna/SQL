@@ -12,3 +12,4 @@ ON SCHEDULE
     WHERE action_date < NOW() - INTERVAL 1 YEAR;
     END$$
     DELIMITER ;
+    
