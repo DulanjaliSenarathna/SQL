@@ -8,7 +8,7 @@ BEGIN
     WHERE invoice_id = NEW.invoice_id;
     END $$
     DELIMITER ;
-
+DROP TRIGGER payments_after_insert;
 INSERT INTO payments 
 VALUES (DEFAULT,5,3,'2019-01-31',10000,1);
 
@@ -26,4 +26,4 @@ CREATE TRIGGER payments_after_delete
     DELIMITER ;
 
 DELETE from payments
-WHERE payment_id = 15;
+WHERE payment_id = 16;
