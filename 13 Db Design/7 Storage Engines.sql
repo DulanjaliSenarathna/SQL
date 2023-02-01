@@ -1,0 +1,2 @@
+SHOW ENGINES;
+ALTER TABLE customers ENGINE = InnoDB
