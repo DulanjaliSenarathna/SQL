@@ -1,0 +1,20 @@
+SHOW CHARACTER SET;
+CREATE DATABASE db_name
+	CHARACTER SET latin1;
+ALTER DATABASE db_name
+	CHARACTER SET latin1;
+
+CREATE TABLE new(
+first_name VARCHAR(50)
+)
+CHARACTER SET latin1;
+
+ALTER TABLE newone (
+first_name VARCHAR(50)
+)
+CHARACTER SET latin1;
+
+ALTER TABLE newone (
+first_name VARCHAR(50) CHARACTER SET latin1
+)
+
