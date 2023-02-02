@@ -8,7 +8,7 @@ CREATE INDEX idx_lastname_state ON customers (last_name,state);
 EXPLAIN SELECT customer_id
 FROM customers
 USE INDEX (idx_lastname_state)
-WHERE LIKE 'A%' AND last_name LIKE 'A%';
+WHERE state LIKE 'A%' AND last_name LIKE 'A%';
 
 EXPLAIN SELECT customer_id
 FROM customers
